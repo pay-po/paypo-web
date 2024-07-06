@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+	--color-local-green: #2E573F;
+	--color-local-green-light: rgba(105, 208, 146, .5);
+	--color-local-yellow: rgba(248, 222, 126,1);
+	--color-local-yellow-light: rgba(245, 245, 220,1);
+	--color-local-red: rgba(139, 0, 0, 1);
+	--color-local-red-light: rgba(139, 0, 0, .8);
+	--color-local-gray: rgba(217, 217, 217,1);
+}
+
+* {
+	font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--color-local-yellow-light) !important;
+    font-family: "Inter", sans-serif;
+}
+
+.bg-green-light {
+    background-color: var(--color-local-green-light) !important;
+}
+
+.bg-green {
+    background-color: var(--color-local-green) !important;
+    color: #fff !important;
+}
+
+.button-red {
+    background-color: var(--color-local-red) !important;
+    color: var(--color-local-yellow) !important;
+    font-weight: 600;
+}
+
+.button-red:hover {
+    background-color: var(--color-local-red-light) !important;
+}
+
+.input-yellow {
+    background-color: var(--color-local-gray) !important;
+    border: none;
+    padding-left: 1rem;
+    outline: none;
+    font-size: .9rem !important;
+}
+
+.input-yellow:focus, .input-yellow:focus-visible {
+    border: none !important;
+    box-shadow: none !important;
+    outline-offset: 0 !important;
+    outline: none !important;
+}
+
+.msg-label {
+    font-size: .8rem;
+}

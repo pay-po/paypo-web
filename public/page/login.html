@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/jpg" href="../assets/img/favicon.ico" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/core.css">
+    <title>Paypo | Login</title>
+</head>
+
+<body>
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="card bg-transparent p-4" style="width: 25rem;">
+            <div class="card-body">
+                <form class="login">
+                    <h3 class="card-title text-center mb-3">Iniciar sesión</h3>
+                    <div class="mb-3">
+                        <input type="email" class="form-control input-yellow" id="correo"
+                            value="ecastillor@upao.edu.pe">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control input-yellow" id="pass"
+                            value="12345678">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn button-red" id="btnLogin">Iniciar sesión</button>
+                    </div>
+                </form>
+                <hr>
+                <div class="text-center">
+                    <a href="#" class="text-black" data-bs-toggle="modal" data-bs-target="#registerModal">¿No tienes una cuenta? Regístrate
+                        aquí</a>
+                </div>
+                <!-- <div class="js-contenedorrespuestasalertas"></div> -->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Registrarse</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="form-register">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="addnombre" placeholder="Nombre">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="addapellidos" placeholder="Apellidos">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="addemail" placeholder="Correo electrónico">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="addpassword" placeholder="Contraseña">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="button" class="btn button-red" id="btnRegister">Registrarse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+        integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../assets/libs/sweetalert2/sweetalert2.all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/js/login.js"></script>
+</body>
+
+</html>
