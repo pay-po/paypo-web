@@ -37,6 +37,10 @@ app.get('/inicio', checkTokenMiddleware, (req, res) => {
     res.sendFile(path.join(__dirname, 'public/page', 'inicio.html'));
 });
 
+app.get('/agregar', checkTokenMiddleware, (req, res) => {
+    res.sendFile(path.join(__dirname, 'public/page', 'agregar.html'));
+});
+
 
 app.get('/login', tokenMiddleware, (req, res) => {
     res.sendFile(path.join(__dirname, 'public/page', 'login.html'));
