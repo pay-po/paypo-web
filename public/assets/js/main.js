@@ -10,6 +10,12 @@ const UrlBase = "https://paypo-api.vercel.app/api/";
 //   }, 1000);
 // }
 
+function loadCabecera(){
+    let usuario = JSON.parse(localStorage.getItem("usuario"));
+    // console.log(usuario.first_name)
+    $('.js-nombrecito').html(usuario.first_name + " " + usuario.last_name);
+}
+
 function sweetAlert(){
     swal({
         type: "info",
