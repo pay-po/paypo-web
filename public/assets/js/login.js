@@ -13,12 +13,7 @@ $("#btnLogin").click(function () {
 				localStorage.setItem("usuario", JSON.stringify(data));
 				window.location.href = "inicio";
 			} else {
-				swal({
-					type: "error",
-					title: "ocurrio un error",
-					showConfirmButton: true,
-					confirmButtonText: "Cerrar",
-				}).then((result) => { });
+				sweetError();
 			}
 		});
 	} else {
